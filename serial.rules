@@ -1,0 +1,1 @@
+ACTION=="add", KERNEL=="ttyUSB[0-9]", DEVPATH!="*/ttyUSB*/*", RUN+="/usr/bin/sudo -u moony /home/moony/Projects/system-scripts/serial-notifier-shim.sh $kernel"
